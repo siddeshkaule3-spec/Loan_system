@@ -1,0 +1,24 @@
+<!-- HTML snippets used by app.py. {placeholders} are filled in from Python. -->
+
+<template id="hero">
+<div class="hero">
+    <h1>🏦 Loan Approval Prediction System</h1>
+    <p>Explore the data, compare ML models and check a loan application instantly.</p>
+</div>
+</template>
+
+<template id="metric_card">
+<div class="metric-card">
+    <div class="label">{label}</div>
+    <div class="value">{value}</div>
+</div>
+</template>
+
+<template id="result">
+<div class="result {css_class}">
+    <h2>{title}</h2>
+    <p>{message}</p>
+    <p>Approval probability: <b>{probability}</b> &nbsp;·&nbsp; Model: {model}</p>
+    <div class="bar-bg"><div class="bar-fg" style ="{bar_style}"></div></div>
+</div>
+</template>
